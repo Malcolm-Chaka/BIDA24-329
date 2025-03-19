@@ -7,18 +7,15 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: #121212; /* Dark background */
     color: #fff;
     text-align: center;
 }
 
 /* Header Section */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     background: #1e1e1e;
+    padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -29,38 +26,42 @@ header h1 {
 }
 
 /* Navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.navbar {
+    background: #1e1e1e !important; /* Ensures dark nav color */
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ff9800;
+.navbar-brand, .nav-link {
+    color: #ff9800 !important;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ff5722;
+.nav-link:hover {
+    color: #ff5722 !important;
 }
 
-/* Main Section */
-main {
-    padding: 50px 20px;
-    max-width: 800px;
-    margin: auto;
+/* Product Cards */
+.card {
+    background: #1e1e1e;
+    border: 1px solid #ff9800;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-main p {
-    font-size: 18px;
-    line-height: 1.6;
-    opacity: 0.8;
+.card-img-top {
+    border-bottom: 2px solid #ff9800;
+}
+
+.card-body h5 {
+    color: #ff9800;
+}
+
+.btn-primary {
+    background: #ff9800;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #ff5722;
 }
 
 /* Footer */
