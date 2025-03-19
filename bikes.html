@@ -4,90 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bicycles for Sale</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Keep custom styles -->
 </head>
+
 <body>
 
     <header>
         <h1>Bicycles for Sale</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cars.html">Cars</a></li>
-                <li><a href="bikes.html">Bicycles</a></li>
-                <li><a href="contact.html">Contact</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Bicycles for Sale</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="cars.html">Cars</a></li>
+                <li class="nav-item"><a class="nav-link" href="bikes.html">Bicycles</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </div>
+</nav>
     </header>
 
 <main>
-    <h2>Discover Our Bicycles</h2>
-    <div class="product-list">
-        <div class="product">
-            <img src="images/bike1.jpg" alt="Bike Model 1">
-            <h3>Bike Model 1</h3>
-            <p>$500</p>
-        </div>
+    <!-- Product Listings (Bootstrap Grid) -->
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Explore Our Bike Collection</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car1.jpg" class="card-img-top" alt="Bike Model 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 1</h5>
+                        <p class="card-text">$25,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="product">
-            <img src="images/bike2.jpg" alt="Bike Model 2">
-            <h3>Bike Model 2</h3>
-            <p>$750</p>
-        </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car2.jpg" class="card-img-top" alt="Bike Model 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 2</h5>
+                        <p class="card-text">$30,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="product">
-            <img src="images/bike3.jpg" alt="Bike Model 3">
-            <h3>Bike Model 3</h3>
-            <p>$600</p>
-        </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car3.jpg" class="card-img-top" alt="Bike Model 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 3</h5>
+                        <p class="card-text">$28,500</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car1.jpg" class="card-img-top" alt="Bike Model 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 4</h5>
+                        <p class="card-text">$25,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="product">
-            <img src="images/bike4.jpg" alt="Bike Model 4">
-            <h3>Bike Model 4</h3>
-            <p>$1,000</p>
-        </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car2.jpg" class="card-img-top" alt="Bike Model 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 5</h5>
+                        <p class="card-text">$30,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="product">
-            <img src="images/bike5.jpg" alt="Bike Model 5">
-            <h3>Bike Model 5</h3>
-            <p>$850</p>
-        </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car3.jpg" class="card-img-top" alt="Bike Model 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 6</h5>
+                        <p class="card-text">$28,500</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car1.jpg" class="card-img-top" alt="Bike Model 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 7</h5>
+                        <p class="card-text">$25,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="product">
-            <img src="images/bike6.jpg" alt="Bike Model 6">
-            <h3>Bike Model 6</h3>
-            <p>$1,200</p>
-        </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car2.jpg" class="card-img-top" alt="Bike Model 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 8</h5>
+                        <p class="card-text">$30,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="product">
-            <img src="images/bike7.jpg" alt="Bike Model 7">
-            <h3>Bike Model 7</h3>
-            <p>$650</p>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car3.jpg" class="card-img-top" alt="Bike Model 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 9</h5>
+                        <p class="card-text">$28,500</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/car3.jpg" class="card-img-top" alt="Bike Model 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Bike Model 10</h5>
+                        <p class="card-text">$28,500</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="product">
-            <img src="images/bike8.jpg" alt="Bike Model 8">
-            <h3>Bike Model 8</h3>
-            <p>$900</p>
-        </div>
-
-        <div class="product">
-            <img src="images/bike9.jpg" alt="Bike Model 9">
-            <h3>Bike Model 9</h3>
-            <p>$1,100</p>
-        </div>
-
-        <div class="product">
-            <img src="images/bike10.jpg" alt="Bike Model 10">
-            <h3>Bike Model 10</h3>
-            <p>$700</p>
-        </div>
-    </div>
 </main>
-
-    <footer>
-        <p>© 2025 Motor & Bike Sales</p>
-    </footer>
+<!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
+  <footer>
+        <p>© 2025 Motor & Bike Sales</p>
+  </footer>
 </html>
