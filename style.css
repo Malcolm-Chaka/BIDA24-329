@@ -64,6 +64,24 @@ header h1 {
     background: #ff5722;
 }
 
+.card {
+    background: #1e1e1e;
+    border: 1px solid #ff9800;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 152, 0, 0.4);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #ff5722;
+    font-weight: bold;
+}
+
 /* Footer */
 footer {
     background: #1e1e1e;
