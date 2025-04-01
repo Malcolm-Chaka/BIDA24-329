@@ -77,6 +77,11 @@ header h1 {
 }
 
 .card-title {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.card-text {
     font-size: 1.2rem;
     color: #ff5722;
     font-weight: bold;
