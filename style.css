@@ -39,6 +39,12 @@ header h1 {
     color: #ff5722 !important;
 }
 
+.nav-link.active {
+    color: #ff5722 !important;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* Make all product cards the same height */
 .card {
     height: 100%;
