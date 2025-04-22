@@ -125,9 +125,25 @@ footer {
 }
 
 .hero {
+    position: relative;
     background: url('images/Plain cover.jpg') center/cover no-repeat;
-    padding: 100px 20px;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+    padding: 120px 20px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* darkness level */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
