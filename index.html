@@ -54,8 +54,46 @@
 </header>
 
 
-    <!-- Featured Products Section -->
+    <!-- Main Section -->
     <main class="container my-5">
+	<h2 class="text-center text-warning">Watch Our Products In Action</h2>
+	<div id="videoCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- First video -->
+    <div class="carousel-item active">
+      <div class="ratio ratio-16x9">
+       <video controls class="d-block w-100">
+          <source src="videos/BMW M4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- Second video -->
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video controls class="d-block w-100">
+          <source src="videos/M Black Sseries.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- Add more videos as needed -->
+    
+  </div>
+
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+		<!-- Featured Products Section -->
         <h2 class="text-center mb-4">Featured Products</h2>
         <div class="row">
             <!-- Car 1 -->
