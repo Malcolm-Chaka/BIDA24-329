@@ -1,128 +1,182 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Velora Motors</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/> <!-- Custom styles -->
-</head>
-<body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-<a class="navbar-brand" href="index.html">Velora Motors</a>
-<button class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="productsDropdown" role="button">Products</a>
-<ul aria-labelledby="productsDropdown" class="dropdown-menu dropdown-menu-dark">
-<li><a class="dropdown-item" href="cars.html">Cars</a></li>
-<li><a class="dropdown-item" href="bikes.html">Bicycles</a></li>
-</ul>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="hero text-white text-center">
-<div class="overlay"></div>
-<div class="container position-relative">
-<h1 class="display-4">Find Your Dream Ride</h1>
-<p class="lead">Discover top-quality motor cars and bicycles at unbeatable prices.</p>
-<a class="btn btn-warning btn-lg me-2" href="cars.html">Browse Cars</a>
-<a class="btn btn-outline-light btn-lg" href="bikes.html">Browse Bicycles</a>
-</div>
-</header>
-<!-- Main Section -->
-
-<main class="container my-5">
-<h2 class="text-center text-warning">Watch Some of Our Sold Products</h2>
-<div class="carousel slide my-5" data-bs-ride="carousel" id="videoCarousel">
-<div class="carousel-inner">
-<!-- First video -->
-<div class="carousel-item active" data-bs-interval="15000">
-<div class="ratio ratio-16x9">
-<video autoplay="" class="d-block w-100" loop="" muted="" playsinline="">
-<source src="videos/BMW M4.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-</div>
-</div>
-<!-- Second video -->
-<div class="carousel-item" data-bs-interval="15000">
-<div class="ratio ratio-16x9">
-<video autoplay="" class="d-block w-100" loop="" muted="" playsinline="">
-<source src="videos/M Black Sseries.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-</div>
-</div>
-</div>
-<!-- Carousel controls -->
-<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#videoCarousel" type="button">
-<span class="carousel-control-prev-icon"></span>
-</button>
-<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#videoCarousel" type="button">
-<span class="carousel-control-next-icon"></span>
-</button>
-</div>
-<!-- Featured Products Section -->
-<h2 class="text-center mb-4 text-warning">Featured Products</h2>
-<div class="row">
-<!-- Car 1 -->
-<div class="col-md-4 col-sm-6 col-12 mb-4">
-<div class="card shadow-sm">
-<img alt="Car Model 1" class="card-img-top" src="images/Cars/McLaren 765LT.jpg"/>
-<div class="card-body">
-<h5 class="card-title">McLaren 765LT</h5>
-<p class="card-text">P9,655,000</p>
-<a class="btn btn-primary" href="cars.html">Browse Cars</a>
-</div>
-</div>
-</div>
-<!-- Bike 1 -->
-<div class="col-md-4 col-sm-6 col-12 mb-4">
-<div class="card shadow-sm">
-<img alt="Bike Model 1" class="card-img-top" src="images/Bikes/Diamondback Release.jpg"/>
-<div class="card-body">
-<h5 class="card-title">Diamondback Release</h5>
-<p class="card-text">P32,000</p>
-<a class="btn btn-primary" href="bikes.html">Browse Bicycles</a>
-</div>
-</div>
-</div>
-<!-- Car 2 -->
-<div class="col-md-4 col-sm-6 col-12 mb-4">
-<div class="card shadow-sm">
-<img alt="Car Model 2" class="card-img-top" src="images/Cars/Porsche GT3 RS.webp"/>
-<div class="card-body">
-<h5 class="card-title">Porsche GT3 RS</h5>
-<p class="card-text">P5,038,000</p>
-<a class="btn btn-primary" href="cars.html">Browse Cars</a>
-</div>
-</div>
-</div>
-</div>
-</main>
-
-<!-- Bootstrap Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom Script -->
-<script src="script.js"></script>
-</body>
-<footer>
-<p>© 2025 Velora Motors</p>
-</footer>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Velora Motors
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <!-- Custom styles -->
+ </head>
+ <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+    <a class="navbar-brand" href="index.html">
+     Velora Motors
+    </a>
+    <button class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="index.html">
+        Home
+       </a>
+      </li>
+      <li class="nav-item dropdown">
+       <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="productsDropdown" role="button">
+        Products
+       </a>
+       <ul aria-labelledby="productsDropdown" class="dropdown-menu dropdown-menu-dark">
+        <li>
+         <a class="dropdown-item" href="cars.html">
+          Cars
+         </a>
+        </li>
+        <li>
+         <a class="dropdown-item" href="bikes.html">
+          Bicycles
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="contact.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="hero text-white text-center">
+   <div class="overlay">
+   </div>
+   <div class="container position-relative">
+    <h1 class="display-4">
+     Find Your Dream Ride
+    </h1>
+    <p class="lead">
+     Discover top-quality motor cars and bicycles at unbeatable prices.
+    </p>
+    <a class="btn btn-warning btn-lg me-2" href="cars.html">
+     Browse Cars
+    </a>
+    <a class="btn btn-outline-light btn-lg" href="bikes.html">
+     Browse Bicycles
+    </a>
+   </div>
+  </header>
+  <!-- Main Section -->
+  <main class="container my-5">
+   <h2 class="text-center text-warning">
+    Watch Some of Our Sold Products
+   </h2>
+   <div class="carousel slide my-5" data-bs-ride="carousel" id="videoCarousel">
+    <div class="carousel-inner">
+     <!-- First video -->
+     <div class="carousel-item active" data-bs-interval="15000">
+      <div class="ratio ratio-16x9">
+       <video autoplay="" class="d-block w-100" loop="" muted="" playsinline="">
+        <source src="videos/BMW M4.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+       </video>
+      </div>
+     </div>
+     <!-- Second video -->
+     <div class="carousel-item" data-bs-interval="15000">
+      <div class="ratio ratio-16x9">
+       <video autoplay="" class="d-block w-100" loop="" muted="" playsinline="">
+        <source src="videos/M Black Sseries.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+       </video>
+      </div>
+     </div>
+    </div>
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#videoCarousel" type="button">
+     <span class="carousel-control-prev-icon">
+     </span>
+    </button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#videoCarousel" type="button">
+     <span class="carousel-control-next-icon">
+     </span>
+    </button>
+   </div>
+   <!-- Featured Products Section -->
+   <h2 class="text-center mb-4 text-warning">
+    Featured Products
+   </h2>
+   <div class="row">
+    <!-- Car 1 -->
+    <div class="col-md-4 col-sm-6 col-12 mb-4">
+     <div class="card shadow-sm">
+      <img alt="Car Model 1" class="card-img-top" src="images/Cars/McLaren 765LT.jpg"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        McLaren 765LT
+       </h5>
+       <p class="card-text">
+        P9,655,000
+       </p>
+       <a class="btn btn-primary" href="cars.html">
+        Browse Cars
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- Bike 1 -->
+    <div class="col-md-4 col-sm-6 col-12 mb-4">
+     <div class="card shadow-sm">
+      <img alt="Bike Model 1" class="card-img-top" src="images/Bikes/Diamondback Release.jpg"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        Diamondback Release
+       </h5>
+       <p class="card-text">
+        P32,000
+       </p>
+       <a class="btn btn-primary" href="bikes.html">
+        Browse Bicycles
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- Car 2 -->
+    <div class="col-md-4 col-sm-6 col-12 mb-4">
+     <div class="card shadow-sm">
+      <img alt="Car Model 2" class="card-img-top" src="images/Cars/Porsche GT3 RS.webp"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        Porsche GT3 RS
+       </h5>
+       <p class="card-text">
+        P5,038,000
+       </p>
+       <a class="btn btn-primary" href="cars.html">
+        Browse Cars
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <!-- Custom Script -->
+  <script src="script.js">
+  </script>
+ </body>
+ <footer>
+  <p>
+   © 2025 Velora Motors
+  </p>
+ </footer>
 </html>
