@@ -52,7 +52,7 @@
                 <h2 id="productName" class="text-warning"></h2>
                 <p id="productDescription" class="lead text-justify"></p>
                 <h4 class="text-danger">P<span id="productPrice"></span></h4>
-                <button class="btn btn-primary btn-lg">Buy Now</button>
+                <a id="buyNowBtn" href="#" class="btn btn-success">Buy Now</a>
             </div>
         </div>
     </div>
@@ -67,17 +67,6 @@
 	
 	<!-- Your Custom Script -->
 	<script src="script.js"></script>
-
-    <!-- JavaScript to Load Product Data -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            document.getElementById("productName").innerText = urlParams.get("name");
-            document.getElementById("productDescription").innerText = urlParams.get("description");
-            document.getElementById("productPrice").innerText = urlParams.get("price");
-            document.getElementById("productImage").src = urlParams.get("image");
-        });
-    </script>
 
 </body>
 </html>
