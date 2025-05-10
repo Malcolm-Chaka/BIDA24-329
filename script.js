@@ -1,13 +1,4 @@
-//JavaScript to Load Product Data
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            document.getElementById("productName").innerText = urlParams.get("name");
-            document.getElementById("productDescription").innerText = urlParams.get("description");
-            document.getElementById("productPrice").innerText = urlParams.get("price");
-            document.getElementById("productImage").src = urlParams.get("image");
-        });
-    </script>
+
 
 //
 document.addEventListener("DOMContentLoaded", function() {
