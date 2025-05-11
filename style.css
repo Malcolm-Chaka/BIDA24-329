@@ -160,9 +160,3 @@ footer {
     border-radius: 10px;
     overflow: hidden;
 }
-@media (min-width: 992px) {
-  .video-carousel video {
-    max-height: 450px;
-    object-fit: cover;
-  }
-}
