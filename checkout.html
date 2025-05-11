@@ -108,11 +108,14 @@
         const custPhone = document.getElementById("custPhone").value;
 
         const mailtoLink = `mailto:bida24-329@thuto.bac.ac.bw?subject=Purchase Request for ${name}&body=Customer Name: ${custName}%0DEmail: ${custEmail}%0DPhone: ${custPhone}%0DLocation: ${custLocation}%0D%0DProduct: ${name}%0DPrice: P${price}%0DImage: ${image}`;
-
-		setTimeout(() => {
-			window.location.href = mailtoLink;
-		}, 100);
-	});
+		
+		// Helps ensure mail client opens on mobile
+        setTimeout(() => {
+          window.location.href = mailtoLink;
+        }, 100);
+		
+      });
+    });
   </script>
 
 </body>
