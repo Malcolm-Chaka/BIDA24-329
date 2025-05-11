@@ -58,6 +58,10 @@
                 <label for="custName" class="form-label">Your Name</label>
                 <input type="text" id="custName" class="form-control" required>
               </div>
+			  <div class="mb-3">
+				<label for="custLocation" class="form-label">Country / City</label>
+				<input type="text" id="custLocation" class="form-control" required>
+			  </div>
               <div class="mb-3">
                 <label for="custEmail" class="form-label">Email Address</label>
                 <input type="email" id="custEmail" class="form-control" required>
@@ -99,12 +103,12 @@
         event.preventDefault();
 
         const custName = document.getElementById("custName").value;
-		const custCountry = document.getElementById("custCountry").value;
+		const custLocation = document.getElementById("custLocation").value;
         const custEmail = document.getElementById("custEmail").value;
         const custPhone = document.getElementById("custPhone").value;
 
-        const mailtoLink = `mailto:bida24-329@thuto.bac.ac.bw?subject=Purchase Request for ${name}&body=Customer Name: ${custName}%0DEmail: ${custEmail}%0DPhone: ${custPhone}%0D%0DProduct: ${name}%0DPrice: P${price}%0DImage: ${image}`;
-        window.location.href = mailtoLink;
+        const mailtoLink = `mailto:bida24-329@thuto.bac.ac.bw?subject=Purchase Request for ${name}&body=Customer Name: ${custName}%0DEmail: ${custEmail}%0DPhone: ${custPhone}%0DLocation: ${custLocation}%0D%0DProduct: ${name}%0DPrice: P${price}%0DImage: ${image}`;
+
       });
     });
   </script>
