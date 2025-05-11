@@ -61,6 +61,9 @@
 		  </div>
 		  <button type="submit" class="btn btn-warning">Send Message</button>
 		</form>
+		<div id="thankYouMsg" class="alert alert-success mt-3 d-none text-center">
+			✅ Thank you for getting in touch with us! Your email app should open now.
+		</div>
     </div>
 
     <!-- Bootstrap Scripts -->
@@ -78,9 +81,14 @@
 
 		const mailto = `mailto:bida24-329@thuto.bac.ac.bw?subject=Contact from ${name}&body=Name: ${name}%0DEmail: ${email}%0D%0DMessage:%0D${encodeURIComponent(message)}`;
 		
+		// Show thank you message
+		const msg = document.getElementById("thankYouMsg");
+		msg.classList.remove("d-none");
+		
+		// Helps ensure mail client opens on mobile
 		setTimeout(() => {
 		  window.location.href = mailto;
-		}, 100); // helps trigger email apps on mobile
+		}, 100);
 	  });
 	</script>
 
