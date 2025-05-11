@@ -41,7 +41,6 @@
   </div>
 </nav>
 
-
   <!-- Checkout Content -->
   <div class="container my-5">
     <h2 class="text-center text-warning mb-4">Checkout</h2>
@@ -52,23 +51,62 @@
           <div class="card-body">
             <h4 class="card-title text-warning" id="productName"></h4>
             <p class="card-text">Price: P<span id="productPrice"></span></p>
-            <button class="btn btn-success w-100 mt-3" disabled>Confirm Purchase</button>
-            <p class="mt-3 text-center"><small>This is a demo checkout page. Purchase confirmation is disabled.</small></p>
+
+            <!-- Purchase Form -->
+            <form id="orderForm">
+              <div class="mb-3">
+                <label for="custName" class="form-label">Your Name</label>
+                <input type="text" id="custName" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="custEmail" class="form-label">Email Address</label>
+                <input type="email" id="custEmail" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="custPhone" class="form-label">Phone Number</label>
+                <input type="tel" id="custPhone" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-success w-100">Confirm Purchase</button>
+              <p class="mt-3 text-center"><small>This will open your email client to send a purchase request.</small></p>
+            </form>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="text-center text-white bg-dark py-3 mt-5">
     <p>© 2025 Motor & Bike Sales</p>
   </footer>
 
-	<!-- Bootstrap Scripts -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const name = decodeURIComponent(params.get("name"));
+      const price = params.get("price");
+      const image = decodeURIComponent(params.get("image"));
 
-	<!-- Your Custom Script -->
-	<script src="script.js"></script>
+      document.getElementById("productName").textContent = name;
+      document.getElementById("productPrice").textContent = price;
+      document.getElementById("productImage").src = image;
+
+      // Handle form submission
+      document.getElementById("orderForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const custName = document.getElementById("custName").value;
+        const custEmail = document.getElementById("custEmail").value;
+        const custPhone = document.getElementById("custPhone").value;
+
+        const mailtoLink = `mailto:bida24-329@thuto.bac.ac.bw?subject=Purchase Request for ${name}&body=Customer Name: ${custName}%0DEmail: ${custEmail}%0DPhone: ${custPhone}%0D%0DProduct: ${name}%0DPrice: P${price}%0DImage: ${image}`;
+        window.location.href = mailtoLink;
+      });
+    });
+  </script>
 
 </body>
 </html>
